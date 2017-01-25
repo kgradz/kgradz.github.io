@@ -1,78 +1,102 @@
-html{
+html {
    font-size: 62.5%;
 }
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.6rem;
 }
-header{
-   max-height: 800px;
+
+header {
+   position: relative;
+   height: 800px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-image: url('../images/slider1.jpg');
    overflow: hidden;
-   background: url('../images/slider1.jpg') 0 0 no-repeat fixed;
 }
-header::after{
-   content: ' ';
-    display: block;
-   overflow: hidden;
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
    height: 100%;
-   z-index: 999;
+   z-index: 100;
    background-color: rgba(59, 67, 76, 0.8);
 }
-header .header{
+
+header .header {
    max-width: 1170px;
    margin: auto;
    padding-left: 15px;
    padding-right: 15px;
 }
+
 .top {
    padding-top: 3rem;
    display: flex;
    justify-content: space-between;
-   align-items: baseline;
+   align-items: center;
 }
-#logo{
+
+#logo {
    font-weight: 600;
    font-size: 1.8rem;
    color: #fff;
 }
-#logo>span{
+
+#logo>span {
    color: #f7600e;
 }
-#menu{
+
+#menu p {
    color: #fff;
    font-size: 1.6rem;
-}
-#menu svg{
+   display: inline-block;
    margin: 0;
-   margin-left: 2rem;
+}
+
+#menu svg {
+   margin: 0;
+   margin-left: 1rem;
    width: 2.5rem;
    height: 2rem;
    color: #fff;
 }
-nav ul{
+
+nav ul {
    display: none;
 }
+
 header .slogan {
    text-align: center;
 }
-header .slogan h3{
+
+header .slogan h3 {
    font-weight: 800;
    font-size: 7rem;
    color: #fff;
    text-transform: uppercase;
-   margin-top: 18rem;;
+   margin-top: 18rem;
+   ;
    margin-bottom: 3.5rem;
 }
-header .slogan h3>span{
+
+header .slogan h3>span {
    color: #f7600e;
 }
-header .slogan p{
+
+header .slogan p {
    font-size: 2.5rem;
    line-height: 4rem;
    color: #fff;
    margin-top: 0;
-   margin-bottom: 10rem;;
+   margin-bottom: 10rem;
+   ;
 }
+
 .slogan button {
    background-color: transparent;
    width: 20.5rem;
@@ -86,18 +110,21 @@ header .slogan p{
    margin-right: 2.5rem;
    margin-bottom: 15rem;
 }
-.slogan button:hover{
+
+.slogan button:hover {
    background-color: #f7600e;
    border: none;
    cursor: pointer;
 }
-.header svg{
+
+.header svg {
    margin-left: 50%;
    margin-right: 50%;
    margin-bottom: 4rem;
    width: 3.5rem;
    height: 3.5rem;
 }
-.header svg:hover{
+
+.header svg:hover {
    cursor: pointer;
 }
