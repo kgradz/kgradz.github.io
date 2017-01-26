@@ -1,63 +1,72 @@
 html {
-    font-size: 62.5%;
+   font-size: 62.5%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.6rem;
 }
+
+
 /*HEADER SITE*/
+
 header {
-    position: relative;
-    height: 80rem;;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('../images/slider1.jpg');
-    overflow: hidden;
+   position: relative;
+   height: 80rem;
+   ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-image: url('../images/slider1.jpg');
+   overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: rgba(59, 67, 76, 0.8);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+   background-color: rgba(59, 67, 76, 0.8);
 }
 
 header .header {
-    max-width: 117rem;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+   max-width: 117rem;
+   margin: auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
 .top {
-    padding-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   padding-top: 3rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #logo {
-    font-weight: 600;
-    font-size: 1.8rem;
-    color: #fff;
+   font-weight: 600;
+   font-size: 1.8rem;
+   color: #fff;
 }
 
 #logo>span {
-    color: #f7600e;
+   color: #f7600e;
 }
 
-#menu p {
+
+/*Hamburger menu*/
+
+
+/*#menu p {
     color: #fff;
     font-size: 1.6rem;
     display: inline-block;
     margin: 0;
-}
-#navIcon{
+}*/
+
+#navIcon {
    width: 2.5rem;
    height: 2rem;
    position: relative;
@@ -72,7 +81,8 @@ header .header {
    transition: .5s ease-in-out;
    cursor: pointer;
 }
-#navIcon span{
+
+#navIcon span {
    display: block;
    position: absolute;
    height: 0.3rem;
@@ -90,54 +100,49 @@ header .header {
    -o-transition: .25s ease-in-out;
    transition: .25s ease-in-out;
 }
+
 #navIcon span:nth-child(1) {
-  top: 0;
+   top: 0;
 }
 
-#navIcon span:nth-child(2),#navIcon span:nth-child(3) {
-  top: 0.8rem;
+#navIcon span:nth-child(2), #navIcon span:nth-child(3) {
+   top: 0.8rem;
 }
 
 #navIcon span:nth-child(4) {
-  top: 1.6rem;
+   top: 1.6rem;
 }
 
 #navIcon.open span:nth-child(1) {
-  top: 1.8rem;
-  width: 0%;
-  left: 50%;
+   top: 1.8rem;
+   width: 0%;
+   left: 50%;
 }
 
 #navIcon.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
 }
 
 #navIcon.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
 }
 
 #navIcon.open span:nth-child(4) {
-  top: 1.8rem;
-  width: 0%;
-  left: 50%;
+   top: 1.8rem;
+   width: 0%;
+   left: 50%;
 }
-
-/*#menu svg {
-    margin: 0;
-    margin-left: 1rem;
-    width: 2.5rem;
-    height: 2rem;
-    color: #fff;
-}*/
-nav{
-   /*comennt display to show navigation*/
+.openCloseMenu{
    display: none;
+}
+.siteMenu {
+   /*comennt display to show navigation*/
    position: absolute;
    top: 0;
    left: 0;
@@ -146,39 +151,31 @@ nav{
    z-index: 100;
    background-color: rgba(59, 67, 76, 0.95);
 }
-nav ul {
+
+.siteMenu ul {
    padding-top: 15rem;
-    list-style: none;
+   list-style: none;
 }
-/*#menuClose{
-   margin: 0 auto;
-   width: 117rem;
-   text-align: right;
-}
-#menuClose svg{
-   margin: 0;
-   margin-top: 3rem;
-   width: 2.5rem;
-   height: 2rem;
-   color: #fff;
-}*/
+
 .siteMenu ul>li {
-    text-align: center;
-    font-size: 3.5rem;
-    line-height: 7rem;
-    text-transform: uppercase;
-    font-weight: 600;
+   text-align: center;
+   font-size: 3.5rem;
+   line-height: 7rem;
+   text-transform: uppercase;
+   font-weight: 600;
 }
 
 .siteMenu li>a {
-    text-decoration: none;
-    color: #fff;
+   text-decoration: none;
+   color: #fff;
 }
-.siteMenu li>a:hover{
+
+.siteMenu li>a:hover {
    color: #f7600e;
    cursor: pointer;
 }
-.siteMenu ul::after{
+
+.siteMenu ul::after {
    margin: 0 auto;
    content: '';
    display: block;
@@ -188,7 +185,8 @@ nav ul {
    width: 16.5rem;
    height: 0.15rem;
 }
-.socialIcon{
+
+.socialIcon {
    width: 29.5rem;
    height: 4.5rem;
    display: flex;
@@ -196,7 +194,8 @@ nav ul {
    align-items: center;
    margin: 0 auto;
 }
-#fb svg, #twitter svg, #gplus svg, #dribbble svg, #behance svg{
+
+#fb svg, #twitter svg, #gplus svg, #dribbble svg, #behance svg {
    margin-left: 0;
    width: 4.5rem;
    height: 4.5rem;
@@ -204,59 +203,59 @@ nav ul {
 }
 
 header .slogan {
-    text-align: center;
+   text-align: center;
 }
 
 header .slogan h3 {
-    font-weight: 800;
-    font-size: 7rem;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 18rem;
-    margin-bottom: 3.5rem;
+   font-weight: 800;
+   font-size: 7rem;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: 18rem;
+   margin-bottom: 3.5rem;
 }
 
 header .slogan h3>span {
-    color: #f7600e;
+   color: #f7600e;
 }
 
 header .slogan p {
-    font-size: 2.5rem;
-    line-height: 4rem;
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 10rem;
-    ;
+   font-size: 2.5rem;
+   line-height: 4rem;
+   color: #fff;
+   margin-top: 0;
+   margin-bottom: 10rem;
+   ;
 }
 
 .slogan button {
-    background-color: transparent;
-    width: 20.5rem;
-    height: 5rem;
-    border-radius: 1.5rem;
-    border: 1px solid #65696f;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-right: 2.5rem;
-    margin-bottom: 15rem;
+   background-color: transparent;
+   width: 20.5rem;
+   height: 5rem;
+   border-radius: 1.5rem;
+   border: 1px solid #65696f;
+   color: #fff;
+   font-weight: 600;
+   font-size: 1.6rem;
+   text-transform: uppercase;
+   margin-right: 2.5rem;
+   margin-bottom: 15rem;
 }
 
 .slogan button:hover {
-    background-color: #f7600e;
-    border: none;
-    cursor: pointer;
+   background-color: #f7600e;
+   border: none;
+   cursor: pointer;
 }
 
 .header svg {
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-bottom: 4rem;
-    width: 3.5rem;
-    height: 3.5rem;
+   margin-left: 50%;
+   margin-right: 50%;
+   margin-bottom: 4rem;
+   width: 3.5rem;
+   height: 3.5rem;
 }
 
 .header svg:hover {
-    cursor: pointer;
+   cursor: pointer;
 }
