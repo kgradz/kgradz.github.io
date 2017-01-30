@@ -1,8 +1,9 @@
-$(document).ready(function(){
-	$('#navIcon').click(function(){
-		$(this).toggleClass('open');
-	});
-   $('#ocMenu').click(function(){
-      $(this).toggleClass('openCloseMenu');
-   });
+$( document ).ready(function() {
+  var hamburger = $('#hamburger-icon');
+  var nav = $('nav');
+  hamburger.click(function() {
+	 nav.toggle();
+	  hamburger.toggleClass('active');
+	  return false;
+  });
 });
