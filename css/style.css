@@ -12,8 +12,7 @@ body {
 
 header {
    position: relative;
-   height: 80rem;
-   ;
+   height: 800px;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -234,3 +233,60 @@ header .slogan p {
 .header svg:hover {
    cursor: pointer;
 }
+
+.services {
+   margin: 0 auto;
+   max-width: 1170px;
+   height: 500px;
+   padding-top: 100px;
+}
+.services ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   text-align: center;
+   margin: 0;
+   padding: 0 15px;
+}
+.services #circle{
+   height: 150px;
+   margin-bottom: 30px;
+   border: 1px solid #cfd1d3;
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.services svg{
+   height: 56px;
+   fill: #f7600e;
+}
+.services li{
+   box-sizing: border-box;
+}
+.services li > a{
+   text-decoration: none;
+   font-size: 1.6rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: #3b434c;
+}
+.services li > p{
+   max-width: 160px;
+   margin: 0;
+   margin-top: 30px;
+   font-size: 1.4rem;
+   color: #3b434c;
+   line-height: 2.7rem;
+}
+/*.wrapper .overlay{}
+.wrapper .newsletter{
+   position: relative;
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-image: url('../images/slider1.jpg');
+   overflow: hidden;
+}*/
